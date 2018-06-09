@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div id="headerbackground" fx="color"></div>
+        <div id="main-nav">
+            <div id="main-nav-helper">
+                <nav>
+                    <ul>
+                        <li>CONTACT</li>
+                        <li>WORK</li>
+                    </ul>
+                </nav>
+                <!--</div>-->
+            </div>
+    </header>
+    <div class="container">
+        <div id="introduction">
+            <div id="paragraph">
+                <h1>I'm Richard Duong, a <span id="web-developer"> web developer</span> living in Elk Grove, currently working at H-P Photography and as a freelancer.</h1>
+            </div>
+            <div id="wreath"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="showcase">
+
+            <div class="showitem" id="hidden">
+                <a href="http:///hd326.github.io/gemaroo">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>GEMAROO</p>
+                    </div>
+                </a>
+                <img src="portfolio/gemaroo.jpg">
+            </div>
+
+
+            <div class="showitem" id="hidden">
+                <a href="http://hd326.github.io/chronicle-cafe">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>CHRONICLE CAFE</p>
+                    </div>
+                </a>
+                <img src="portfolio/miracles.jpg">
+            </div>
+
+
+            <div class="showitem" id="hidden">
+                <a href="http://hd326.github.io/emane">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>EMANE</p>
+                    </div>
+                </a>
+                <img src="portfolio/emane.jpg">
+            </div>
+
+
+            <div class="showitem" id="hidden">
+                <a href="http://hd326.github.io/bobs-burger">
+                    <div id="showitemhelp" class="hidden2">
+                        <p>BOBS' BURGERHOUSE</p>
+                    </div>
+                </a>
+                <img src="portfolio/bobs-burger.jpg">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="additional">
+            <p id="other"><span id="otherul">OTHER PROJECTS</span></p>
+            <!--<nav>
+                <ul>
+                    <li>H-P Photography</li>
+                    <li>Marigold</li>
+                    <li>Kalafina</li>
+                </ul>
+            </nav>
+            -->
+
+
+            <div id="additionalrows">
+                
+                <div class="additionalrowsitem">
+                    <div class="additionalrowsitemname"><a href="https://hd326.github.io/hp-photography">H-P Photography</a></div>
+                    <div class="additionalrowsitemtype"><a href="https://hd326.github.io/hp-photography">Freelance</a></div>
+                    <div class="additionalrowsitemdate"><a href="https://hd326.github.io/hp-photography">2017</a></div>
+                </div>
+
+                
+
+                <div class="additionalrowsitem">
+                    <div class="additionalrowsitemname"><a href="https://hd326.github.io/marigold">Marigold</a></div>
+                        <div class="additionalrowsitemtype"><a href="https://hd326.github.io/marigold">UX</a></div>
+                        <div class="additionalrowsitemdate"><a href="https://hd326.github.io/marigold">2017</a></div>
+                </div>
+
+                
+
+                <div class="additionalrowsitem">
+                    <div class="additionalrowsitemname"><a href="https://hd326.github.io/kalafina">Kalafina</a></div>
+                    <div class="additionalrowsitemtype"><a href="https://hd326.github.io/kalafina">Design</a></div>
+                    <div class="additionalrowsitemdate"><a href="https://hd326.github.io/kalafina">2017</a></div>
+                </div>
+                
+            </div>
+
+            <script src="jquery-3.2.1.js"></script>
+            <script>
+                $(function() {
+                    $('.additionalrowsitem').hover(
+                        function() {
+                            $(this).css({
+                                'background': 'linear-gradient(to right, #82e0ff, #ccffd3)',
+                                'color': 'white',
+                                'transition': 'all ease-in .3s'
+                            });
+                            $('#additional a', this).css({
+                                'color': 'white',
+                                'transition': 'all ease-in .3s'
+                            });
+                        },
+                        function() {
+                            $(this).css({
+                                'background': 'inherit',
+                                'color': 'inherit'
+                            });
+                            $('#additional a').css({
+                                'color': 'inherit'
+                            });
+                        },
+                    );
+
+                });
+
+            </script>
+
+            <!--<table>
+                <tr>
+                    <td><a href="https://hd326.github.io/hp-photography">H-P Photography</a></td>
+                    <td><a href="https://hd326.github.io/hp-photography">Freelance</a></td>
+                    <td><a href="https://hd326.github.io/hp-photography">2017</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://hd326.github.io/marigold">Marigold</a></td>
+                    <td><a href="https://hd326.github.io/marigold">UX</a></td>
+                    <td><a href="https://hd326.github.io/marigold">2017</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="https://hd326.github.io/kalafina">Kalafina</td>
+                    <td><a href="https://hd326.github.io/kalafina">Design</a></td>
+                    <td><a href="https://hd326.github.io/kalafina">2017</a></td>
+                </tr>
+            </table>
+            -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="segue">
+            <div id="skills">
+                <p>SKILLS</p>
+                <div id="skills-container">
+                    <div id="actual">
+                        <p class="list">HTML5</p>
+                        <p class="list">CSS3</p>
+                        <p class="list">jQuery</p>
+                        <p class="list">JavaScript</p>
+                        <p class="list">PHP</p>
+                        <p class="list">MySQL</p>
+                        <p class="list">WordPress</p>
+                    </div>
+                    <!--<div id="years">
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                        <p class="list">#:</p>
+                    </div>-->
+                </div>
+            </div>
+
+            <script src="jquery-3.2.1.js"></script>
+            <script>
+                $(function() {
+                    $('#skills').hover(
+                        function() {
+                            $('#skills').css({
+                                'background-color': '#d5f1ff',
+                                'transition': 'all ease-in-out .3s'
+                            });
+                        },
+                        function() {
+                            $('#skills').css({
+                                'background-color': 'inherit'
+                            });
+                        },
+                    );
+
+                    $('#interest').hover(
+                        function() {
+                            $('#interest').css({
+                                'background-color': '#ffd5d5',
+                                'transition': 'all ease-in-out .3s'
+                            });
+                        },
+                        function() {
+                            $('#interest').css({
+                                'background-color': 'inherit'
+                            });
+                        },
+                    );
+
+
+                    $('tr').hover(
+                        function() {
+                            $(this).css({
+                                'background': 'linear-gradient(to right, #82e0ff, #ccffd3)',
+                                'color': 'white',
+                                'transition': 'all ease-in .3s'
+                            });
+                            $('#additional a', this).css({
+                                'color': 'white',
+                                'transition': 'all ease-in .3s'
+                            });
+                        },
+                        function() {
+                            $(this).css({
+                                'background': 'inherit',
+                                'color': 'inherit'
+                            });
+                            $('#additional a').css({
+                                'color': 'inherit'
+                            });
+                        },
+                    );
+                });
+
+            </script>
+            <script>
+                $(function() {
+                    /*var number = $('#actual .list');
+                        for (i = 0; i < number.length; i++) {
+                            var characters = number.text().length;
+                            for (e = 0; e < characters; e++) {
+                                $('#years .list').html(e);
+                            }
+                        }
+                    });
+                    */
+
+                    /*$(function() {
+                        var number = $('#actual .list');
+                        for (i = 0; i < number.length; i++) {
+                            var characters = number.text().length;
+                            $('#years .list').html(characters);
+                        }
+                    });*/
+
+                    /*$(function() {
+                        var number = $('#actual .list');
+                        for (i = 0; i < number.length; i++) {
+                            $('#years .list').html(number[i].text().length);
+                        }
+                    });
+                    */
+
+
+                    var $list = $('#actual .list');
+                    $('#years .list').text(function(i) {
+                        return $list.eq(i).text().length;
+                    });
+                });
+
+            </script>
+
+            <div id="interest">
+                <p>INTERESTS</p>
+                <p class="list">Research</p>
+                <p class="list">Theory</p>
+                <p class="list">Art</p>
+                <p class="list">Anime</p>
+                <p class="list">UX</p>
+                <p class="list">Design Algorithms</p>
+                <p class="list">Data Structure</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="education">
+            <p>EDUCATION</p>
+            <p class="list">Associates of Science, Web Development</p>
+            <p class="list">Bachelor of Arts, History</p>
+            <p class="list" id="online-title">ONLINE COURSES</p>
+            <p class="list">JavaScript: Understanding the Weird Parts</p>
+            <p class="list">React, Redux</p>
+            <p class="list">Advanced CSS, SASS</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="more-info">
+            <div id="more-info-pic-m">
+                <!--<img src="me.JPG">-->
+            </div>
+            <div id="more-info-me">
+                <h1>More about me</h1>
+                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've always enjoyed art, and feel like I've found potentiality through programming. I have an interest in colorscapes in designs and the desire to continually explore technology. </p>
+            </div>
+
+            <div id="more-info-pic">
+                <!--<img src="me.JPG">-->
+            </div>
+
+            <div id="more-info-me-m">
+                <h1>More about me</h1>
+                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've always enjoyed art, and feel like I've found potentiality through programming. I have an interest in colorscapes in designs and the desire to continually explore technology. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="startproject">
+            <h1>Interested in starting a project? <a href="mailto:r_duong89@yahoo.com">Let's talk.</a></h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="socialmedia">
+            <nav>
+                <ul>
+                    <li><span class="fab fa-github fa-2x"></span></li>
+                    <li><span class="fab fa-linkedin fa-2x"></span></li>
+                    <li><span class="fab fa-instagram fa-2x"></span></li>
+                    <li><span class="far fa-envelope fa-2x"></span></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(function() {
+            $('#hidden:nth-of-type(1)').fadeIn(1000);
+            $('#hidden:nth-of-type(2)').fadeIn(1500);
+            $('#hidden:nth-of-type(3)').fadeIn(2000);
+            $('#hidden:nth-of-type(4)').fadeIn(2500);
+            /*
+            $('.showitem').hover(
+                function() {
+                    $('img', this).fadeOut(0);
+                    $('.hidden2', this).fadeIn(00);
+                },
+                function() {
+                    $('img', this).fadeIn(0);
+                    $('.hidden2', this).fadeOut(00);
+                },
+            );
+            */
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+
+            });
+        });
+
+    </script>
+
+
+    <!--<script src="jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            var p = $('#wreath');
+            for (var i = 0; i < 3; i++) {
+                p
+                    .animate({
+                        backgroundColor: '#fff'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#ddd'
+                    }, 1000, 'linear');
+            }
+        });
+    </script>-->
+
+
+    <script src="jquery-ui.min.js"></script>
+    <!--<script>
+        $(function() {
+            for (i = 0; i < 5; i++)
+                $('#wreath').animate({
+                    backgroundColor: randomRgb()
+                }, 2500);
+        });
+
+        function randomRgb() {
+            return 'rgb(' + (Math.floor(Math.random() * 256)) + ', ' +
+                (Math.floor(Math.random() * 256)) + ', ' +
+                (Math.floor(Math.random() * 256)) + ')';
+        }
+    </script>-->
+    <script>
+        $(function() {
+            var p = $('#wreath');
+            for (i = 0; i < 1000; i++) {
+                p
+                    .animate({
+                        backgroundColor: '#ffd9d9'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#cfcfff'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#f9cbff'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#cbd5ff'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#cbf3ff'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#cbffed'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#ccffde'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#f5ffcb'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#fff7cc'
+                    }, 1000, 'linear')
+                    .animate({
+                        backgroundColor: '#ffd5cb'
+                    }, 1000, 'linear')
+            }
+        });
+
+    </script>
+
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('#main-nav').css({
+                        position: 'fixed',
+                        top: '0',
+                        transition: '1s ease',
+                        marginTop: '10px'
+                    });
+
+                    $('#main-nav-helper').css({
+                        left: '-50%',
+                        transform: 'translateX(50%)',
+                        transition: '1s ease',
+                    });
+
+                    $('#headerbackground').css({
+                        position: 'fixed',
+                        top: '0',
+                        backgroundColor: '#ffe3e3',
+                        transition: '1s ease'
+                    });
+
+                } else {
+                    $('#main-nav').css({
+                        position: 'fixed',
+                        right: '0',
+                        transition: '1s ease',
+                        marginTop: '40px',
+                        marginRight: '100px'
+                    });
+
+                    $('#main-nav-helper').css({
+                        left: '0%',
+                        transform: 'translateX(0%)',
+                        transition: '1s ease',
+                    });
+
+                    $('#headerbackground').css({
+                        position: 'fixed',
+                        backgroundColor: '#ffffff',
+                        top: '0',
+                        right: '0',
+                        transition: '1s ease'
+                    });
+                }
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
