@@ -19,8 +19,8 @@
             <div id="main-nav-helper">
                 <nav>
                     <ul>
-                        <li>CONTACT</li>
-                        <li>WORK</li>
+                        <li><a href="mailto:r_duong89@yahoo.com">CONTACT</a></li>
+                        <li><a href="index.html#showcase">WORK</a></li>
                     </ul>
                 </nav>
                 <!--</div>-->
@@ -42,7 +42,8 @@
             <div class="showitem" id="hidden">
                 <a href="http:///hd326.github.io/gemaroo">
                     <div id="showitemhelp" class="hidden2">
-                        <p>GEMAROO</p>
+                        <p><span id="bracket">{</span> GEMAROO <span id="bracket">}</span>
+                        </p>
                     </div>
                 </a>
                 <img src="portfolio/gemaroo.jpg">
@@ -52,7 +53,7 @@
             <div class="showitem" id="hidden">
                 <a href="http://hd326.github.io/chronicle-cafe">
                     <div id="showitemhelp" class="hidden2">
-                        <p>CHRONICLE CAFE</p>
+                        <p><span id="bracket">{</span> CHRONICLE CAFE <span id="bracket">}</span></p>
                     </div>
                 </a>
                 <img src="portfolio/miracles.jpg">
@@ -62,7 +63,7 @@
             <div class="showitem" id="hidden">
                 <a href="http://hd326.github.io/emane">
                     <div id="showitemhelp" class="hidden2">
-                        <p>EMANE</p>
+                        <p><span id="bracket">{</span> EMANE <span id="bracket">}</span></p>
                     </div>
                 </a>
                 <img src="portfolio/emane.jpg">
@@ -72,7 +73,7 @@
             <div class="showitem" id="hidden">
                 <a href="http://hd326.github.io/bobs-burger">
                     <div id="showitemhelp" class="hidden2">
-                        <p>BOBS' BURGERHOUSE</p>
+                        <p><span id="bracket">{</span> BOBS' BURGERHOUSE <span id="bracket">}</span></p>
                     </div>
                 </a>
                 <img src="portfolio/bobs-burger.jpg">
@@ -80,6 +81,26 @@
 
         </div>
     </div>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(function() {
+            $('.showitem').hover(
+                function() {
+                    $('img', this).css({
+                        'visibility': 'hidden'
+                    });
+                    $('#showitemhelp', this).fadeIn(500);
+                },
+                function() {
+                    $('img', this).css({
+                        'visibility': 'visible'
+                    });
+                    $('#showitemhelp', this).fadeOut(500);
+                },
+            );
+        });
+    </script>
 
     <div class="container">
         <div id="additional">
@@ -95,29 +116,29 @@
 
 
             <div id="additionalrows">
-                
+
                 <div class="additionalrowsitem">
                     <div class="additionalrowsitemname"><a href="https://hd326.github.io/hp-photography">H-P Photography</a></div>
                     <div class="additionalrowsitemtype"><a href="https://hd326.github.io/hp-photography">Freelance</a></div>
                     <div class="additionalrowsitemdate"><a href="https://hd326.github.io/hp-photography">2017</a></div>
                 </div>
 
-                
+
 
                 <div class="additionalrowsitem">
                     <div class="additionalrowsitemname"><a href="https://hd326.github.io/marigold">Marigold</a></div>
-                        <div class="additionalrowsitemtype"><a href="https://hd326.github.io/marigold">UX</a></div>
-                        <div class="additionalrowsitemdate"><a href="https://hd326.github.io/marigold">2017</a></div>
+                    <div class="additionalrowsitemtype"><a href="https://hd326.github.io/marigold">UX</a></div>
+                    <div class="additionalrowsitemdate"><a href="https://hd326.github.io/marigold">2017</a></div>
                 </div>
 
-                
+
 
                 <div class="additionalrowsitem">
                     <div class="additionalrowsitemname"><a href="https://hd326.github.io/kalafina">Kalafina</a></div>
                     <div class="additionalrowsitemtype"><a href="https://hd326.github.io/kalafina">Design</a></div>
                     <div class="additionalrowsitemdate"><a href="https://hd326.github.io/kalafina">2017</a></div>
                 </div>
-                
+
             </div>
 
             <script src="jquery-3.2.1.js"></script>
@@ -130,7 +151,7 @@
                                 'color': 'white',
                                 'transition': 'all ease-in .3s'
                             });
-                            $('#additional a', this).css({
+                            $('.additionalrowsitem', this).css({
                                 'color': 'white',
                                 'transition': 'all ease-in .3s'
                             });
@@ -145,9 +166,7 @@
                             });
                         },
                     );
-
                 });
-
             </script>
 
             <!--<table>
@@ -175,6 +194,7 @@
     <div class="container">
         <div id="segue">
             <div id="skills">
+                <div id="skillsbg"></div>
                 <p>SKILLS</p>
                 <div id="skills-container">
                     <div id="actual">
@@ -196,15 +216,37 @@
                         <p class="list">#:</p>
                     </div>-->
                 </div>
+
             </div>
 
             <script src="jquery-3.2.1.js"></script>
             <script>
                 $(function() {
+                    var $list = $('#actual .list');
+                    $('#years .list').text(function(i) {
+                        return $list.eq(i).text().length;
+                    });
+                    /*
+                    $('#actual .list').hover(
+                        function() {
+                            var $list = $('#actual .list');
+                            for (var i = 0; i < $list.length; i++) {
+                                var text = $list.eq(i).text();
+                                $($('#actual .list')[i]).animate({marginBottom: '1px'});
+                            }
+                        },
+
+                        function() {
+
+                        },
+
+                    );
+                    */
+
                     $('#skills').hover(
                         function() {
                             $('#skills').css({
-                                'background-color': '#d5f1ff',
+                                'background-color': '#eaf8ff',
                                 'transition': 'all ease-in-out .3s'
                             });
                         },
@@ -218,7 +260,7 @@
                     $('#interest').hover(
                         function() {
                             $('#interest').css({
-                                'background-color': '#ffd5d5',
+                                'background-color': '#ffeeee',
                                 'transition': 'all ease-in-out .3s'
                             });
                         },
@@ -229,7 +271,23 @@
                         },
                     );
 
+                    $('#education').hover(
+                        function() {
+                            $('#education').css({
+                                'background-color': '#f9ffe3',
+                                'transition': 'all ease-in-out .3s'
+                            });
+                        },
+                        function() {
+                            $('#education').css({
+                                'background-color': 'inherit'
+                            });
+                        },
+                    );
 
+
+
+                    /*
                     $('tr').hover(
                         function() {
                             $(this).css({
@@ -252,8 +310,8 @@
                             });
                         },
                     );
+                    */
                 });
-
             </script>
             <script>
                 $(function() {
@@ -282,14 +340,7 @@
                         }
                     });
                     */
-
-
-                    var $list = $('#actual .list');
-                    $('#years .list').text(function(i) {
-                        return $list.eq(i).text().length;
-                    });
                 });
-
             </script>
 
             <div id="interest">
@@ -299,8 +350,8 @@
                 <p class="list">Art</p>
                 <p class="list">Anime</p>
                 <p class="list">UX</p>
-                <p class="list">Design Algorithms</p>
-                <p class="list">Data Structure</p>
+                <p class="list">Design Structure</p>
+                <p class="list">Data Algorithms</p>
 
             </div>
         </div>
@@ -342,7 +393,7 @@
 
     <div class="container">
         <div id="startproject">
-            <h1>Interested in starting a project? <a href="mailto:r_duong89@yahoo.com">Let's talk.</a></h1>
+            <h1>Interested in starting a project? <a id="email" href="mailto:r_duong89@yahoo.com">Let's talk.</a></h1>
         </div>
     </div>
 
@@ -354,18 +405,12 @@
                     <li><span class="fab fa-linkedin fa-2x"></span></li>
                     <li><span class="fab fa-instagram fa-2x"></span></li>
                     <li><span class="far fa-envelope fa-2x"></span></li>
-
                 </ul>
             </nav>
         </div>
     </div>
 
-
-
-
-
-
-
+    <script src="jquery-ui.min.js"></script>
     <script src="jquery-3.2.1.js"></script>
     <script>
         $(function() {
@@ -385,17 +430,49 @@
                 },
             );
             */
+            $(window).scroll(
+                function() {
+                    var scrollval = $(this).scrollTop();
+                    console.log(scrollval);
+                    if (scrollval >= 1) {
+                        $('#additional').fadeIn(1500);
+                    }
+
+                    if (scrollval >= 350) {
+                        $('#skills').show('slide', {
+                            direction: 'left'
+                        }, 1750);
+                    }
+
+                    if (scrollval >= 350) {
+                        $('#interest').show('slide', {
+                            direction: 'right'
+                        }, 1750);
+                    }
+
+                    if (scrollval >= 350) {
+                        $('#education').show('slide', {
+                            direction: 'down'
+                        }, 1750);
+                    }
+
+                    if (scrollval >= 800) {
+                        $('#more-info').fadeIn(1500);
+                    }
+                    if (scrollval >= 1100) {
+                        $('#startproject').fadeIn(1500);
+                    }
+                    if (scrollval >= 1500) {
+                        /*$('#socialmedia').fadeIn(1500);*/
+                        $('#socialmedia nav ul li:nth-of-type(1) span').show('slide', {direction: 'left'}, 550);
+                        $('#socialmedia nav ul li:nth-of-type(2) span').show('slide', {direction: 'down'}, 550);
+                        $('#socialmedia nav ul li:nth-of-type(3) span').show('slide', {direction: 'up'}, 550);
+                        $('#socialmedia nav ul li:nth-of-type(4) span').show('slide', {direction: 'right'}, 550);
+                    }
+                }
+            );
+
         });
-
-    </script>
-
-    <script>
-        $(function() {
-            $(window).scroll(function() {
-
-            });
-        });
-
     </script>
 
 
@@ -468,7 +545,6 @@
                     }, 1000, 'linear')
             }
         });
-
     </script>
 
     <script>
@@ -520,7 +596,6 @@
                 }
             });
         });
-
     </script>
 
 

@@ -11,11 +11,6 @@ header {
     position: relative;
 }
 
-header a {
-    text-decoration: none;
-    color: black;
-}
-
 #main-nav nav {}
 
 #main-nav nav ul {}
@@ -126,17 +121,8 @@ header a {
     height: 100%;
 }
 
-#bracket {
-    color: #ffc1c1;
-    font-size: 36px;
-    background: -webkit-linear-gradient(#ffdcdc, #d5ffb0, #ffdcdc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 0px 15px;
-}
-
-/*
 .showitem:hover img {
+
     opacity: 1;
     visibility: hidden;
 }
@@ -145,7 +131,6 @@ header a {
     display: block;
     transition: all 1s ease;
 }
-*/
 
 /*
 #showcase a:nth-of-type(1) .showitem {
@@ -206,7 +191,7 @@ header a {
     z-index: 2;
     color: #797979;
     letter-spacing: 2px;
-    top: 40%;
+    top: 48%;
 }
 
 #showitemhelp p {
@@ -221,10 +206,7 @@ header a {
     margin-top: 75px;
     font-size: 24px;
     overflow: hidden;
-    display: none;
 }
-
-
 
 #additional nav ul li {
     list-style: none;
@@ -353,7 +335,7 @@ header a {
 
 
 #segue {
-    width: 45%;
+    width: 35%;
     margin: auto;
     margin-top: 75px;
     font-size: 24px;
@@ -364,21 +346,8 @@ header a {
 }
 
 #segue #skills {
-    padding: 25px 50px;
+    padding: 25px 25px;
     text-align: left;
-    display: none;
-    position: relative;
-}
-
-#skillsbg {
-    background-color: #ffc5c5;
-    border-radius: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transform: translate(-10.5%, -9.5%);
-    display: none;
 }
 
 /*in case captioning needed*/
@@ -413,9 +382,8 @@ header a {
 */
 
 #segue #interest {
-    padding: 25px 50px;
+    padding: 25px 25px;
     text-align: right;
-    display: none;
 }
 
 
@@ -463,7 +431,6 @@ header a {
     font-size: 24px;
     margin-top: 10px;
     padding: 25px 25px;
-    display: none;
 }
 
 #education .list {
@@ -477,10 +444,9 @@ header a {
     margin-top: 10px;
 }
 
-/*#education:hover {
+#education:hover {
     background-color: #f9ffe3;
 }
-*/
 
 #education #online-title {
     margin-top: 25px;
@@ -497,7 +463,6 @@ header a {
     color: #2f2f2f;
     display: grid;
     grid-template-columns: 1fr .5fr;
-    display: none;
 }
 
 #more-info p {
@@ -542,6 +507,7 @@ header a {
 }
 
 
+
 #startproject {
     margin: auto;
     width: 50%;
@@ -563,45 +529,24 @@ header a {
     margin: auto;
     text-align: center;
     margin-top: 75px;
-
 }
 
 #socialmedia nav ul {
-    margin-bottom: 175px;
+    margin-bottom: 100px;
 }
 
 #socialmedia nav ul li {
     list-style: none;
     display: inline;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 100px;
-    position: relative;
-    
-}
-
-#socialmedia nav ul li:nth-of-type(1) {
-    margin-left: 0px;
-}
-
-
-#socialmedia nav ul li span {
-    display: none;
-    text-align: center;
-    position: absolute;
-    color:#4b4b4b;
 }
 
 #socialmedia nav ul li:hover {
     color: #a4ffa4;
     transition: .3s ease;
 }
-
-#socialmedia nav ul li:hover span {
-    color: #a4ffa4;
-    transition: .3s ease;
-}
-
 
 @media screen and (max-width: 1336px) {
     .container #segue {
@@ -1008,12 +953,12 @@ header a {
     .container #socialmedia nav ul li:nth-of-type(4) span {
         margin-top: 30px;
     }
-
-    .container #additional {
+    
+    .container #additional{
         width: 95%;
     }
-
-    .additionalrowsitem {
+    
+    .additionalrowsitem{
         width: 100%;
         grid-template-columns: 1fr .4fr .2fr;
         font-size: 12px;
