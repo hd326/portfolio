@@ -383,10 +383,7 @@ header a {
 
 /*in case captioning needed*/
 
-#segue #skills-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+#segue #skills-container {}
 
 #segue #skills .list {
     font-size: 14px;
@@ -484,8 +481,8 @@ header a {
 
 #education #online-title {
     margin-top: 25px;
-    font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
+    
 }
 
 #more-info {
@@ -602,8 +599,8 @@ header a {
     transition: .3s ease;
 }
 
-#socialmedia nav ul li a{
-    text-decoration:none;
+#socialmedia nav ul li a {
+    text-decoration: none;
 }
 
 
@@ -681,7 +678,12 @@ header a {
 
     .container #education {
         width: 100%;
+        font-size: 12px;
         transform: translateX(0%);
+    }
+
+    .container #education .list {
+        font-size: 12px;
     }
 
     .container #more-info {
@@ -705,6 +707,10 @@ header a {
 
     .container #socialmedia nav ul li:nth-of-type(4) span {
         margin-top: 30px;
+    }
+    
+    .container #showcase #showitemhelp {
+        font-size: 16px;
     }
 }
 
@@ -775,8 +781,11 @@ header a {
 
     .container #education {
         width: 100%;
+        font-size: 12px;
         transform: translateX(0%);
     }
+
+
 
     .container #more-info {
         width: 80%;
@@ -799,6 +808,9 @@ header a {
 
     .container #socialmedia nav ul li:nth-of-type(4) span {
         margin-top: 30px;
+    }
+    .container #showcase #showitemhelp {
+        font-size: 14px;
     }
 }
 
@@ -887,6 +899,39 @@ header a {
     .container #socialmedia nav ul li:nth-of-type(4) span {
         margin-top: 30px;
     }
+    
+    .container #socialmedia {
+        width: 100%;
+    }
+
+    .container #socialmedia nav ul {
+        transform: translateX(7.5%);
+    }
+    
+    .container #socialmedia nav ul li {
+        display: inline;
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-bottom: 100px;
+        position: relative;
+        transform: translateX(0%);
+
+    }
+    
+    .container #socialmedia nav ul li:nth-of-type(1){
+        margin-left: 0px;
+    }
+
+    .container #socialmedia nav ul li span {
+        display: none;
+        text-align: center;
+        color: #4b4b4b;
+        margin-left: 10px
+    }
+    .container #socialmedia nav ul li:nth-of-type(1) span{
+        margin-left: 0px;
+    }
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -931,21 +976,35 @@ header a {
 
     .container #segue #interest {
         font-size: 12px;
+        text-align: center;
     }
 
     .container #segue #skills {
         font-size: 12px;
+        text-align: center;
     }
+
 
     .container #segue #interest .list {
         font-size: 12px;
+        text-align: center;
     }
 
     .container #segue #skills .list {
         font-size: 12px;
+        text-align: center;
+    }
+
+    .container #education .list {
+        font-size: 12px;
     }
 
     .container #education {
+        font-size: 12px;
+    }
+
+
+    .container #segue #education {
         width: 100%;
         transform: translateX(0%);
     }
@@ -1020,6 +1079,35 @@ header a {
     .additionalrowsitem {
         width: 100%;
         grid-template-columns: 1fr .4fr .2fr;
+        font-size: 12px;
+    }
+
+    .container #socialmedia {
+        width: 100%;
+    }
+
+    .container #socialmedia nav ul {
+        transform: translateX(7.5%);
+    }
+    
+    .container #socialmedia nav ul li {
+        display: inline;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+        position: relative;
+        transform: translateX(0%);
+
+    }
+
+    .container #socialmedia nav ul li span {
+        display: none;
+        text-align: center;
+        color: #4b4b4b;
+        margin-left: 10px;
+    }
+    
+    .container #showcase #showitemhelp {
         font-size: 12px;
     }
 }
