@@ -600,7 +600,10 @@ header a {
 #socialmedia nav ul li:hover span {
     color: #a4ffa4;
     transition: .3s ease;
+}
 
+#socialmedia nav ul li a{
+    text-decoration:none;
 }
 
 
