@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="">
 
@@ -7,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
+    <link href="live.css" rel="stylesheet">
 
     <title></title>
 </head>
@@ -403,7 +404,7 @@
                 <ul>
                     <li><a href="https://github.com/hd326" target="_blank"><span class="fab fa-github fa-2x"></span></a></li>
                     <li><a href="https://www.linkedin.com/in/richard-duong-97b399137/" target="_blank"><span class="fab fa-linkedin fa-2x"></span></a></li>
-                    <li><a href="https://twitter.com/richardduong89"><span class="fab fa-twitter fa-2x"></span></a></li>
+                    <li><span class="fab fa-instagram fa-2x"></span></li>
                     <li><a href="mailto:r_duong89@yahoo.com"><span class="far fa-envelope fa-2x"></span></a></li>
                 </ul>
             </nav>
@@ -456,15 +457,12 @@
                         }, 1750);
                     }
 
-                    if (scrollval >= 1300) {
-                        /*$('#more-info').fadeIn(1500);*/
-                        $('#more-info').show('slide', { direction: 'down' }, 1500);
+                    if (scrollval >= 800) {
+                        $('#more-info').fadeIn(1500);
                     }
-                    
                     if (scrollval >= 1400) {
                         $('#startproject').fadeIn(1200);
                     }
-                    
                     if (scrollval >= 1500) {
                         /*$('#socialmedia').fadeIn(1500);*/
                         $('#socialmedia nav ul li:nth-of-type(1) span').show('slide', {
