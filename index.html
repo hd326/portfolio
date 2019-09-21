@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
 
     <title></title>
@@ -30,7 +31,8 @@
     <div class="container">
         <div id="introduction">
             <div id="paragraph">
-                <h1>I'm Richard Duong, a <span id="web-developer"> web developer</span> living in Elk Grove, currently working at The California Department of Transportation and as a freelancer.</h1>
+                <h1>I'm Richard Duong, a <span id="web-developer"> web developer</span> living in Elk Grove, currently
+                    working at The California Department of Transportation and as a freelancer.</h1>
             </div>
             <div id="wreath"></div>
         </div>
@@ -39,61 +41,55 @@
 
     <div class="container">
         <div id="showcase">
-
-            <div class="showitem" id="hidden">
-                <a href="https:///hd326.github.io/gemaroo" target="_blank">
+            <a href="https:///hd326.github.io/gemaroo" target="_blank">
+                <div class="showitem" id="hidden">
                     <div id="showitemhelp" class="hidden2">
-                        <p><span id="bracket">{</span> GEMAROO <span id="bracket">}</span>
-                        </p>
+                        <p><span id="bracket"></span> GEMAROO <span id="bracket"></span></p>
                     </div>
-                </a>
-                <img src="portfolio/gemaroo.jpg">
-            </div>
+                    <img src="portfolio/gemaroo.jpg">
+                </div>
+            </a>
 
-
-            <div class="showitem" id="hidden">
-                <a href="https://hd326.github.io/chronicle-cafe" target="_blank">
+            <a href="https://hd326.github.io/chronicle-cafe" target="_blank">
+                <div class="showitem" id="hidden">
                     <div id="showitemhelp" class="hidden2">
-                        <p><span id="bracket">{</span> CHRONICLE CAFE <span id="bracket">}</span></p>
+                        <p><span id="bracket"></span> CHRONICLE CAFE <span id="bracket"></span></p>
                     </div>
-                </a>
-                <img src="portfolio/miracles.jpg">
-            </div>
+                    <img src="portfolio/miracles.jpg">
+                </div>
+            </a>
 
-
-            <div class="showitem" id="hidden">
-                <a href="https://hd326.github.io/emane" target="_blank">
+            <a href="https://hd326.github.io/emane" target="_blank">
+                <div class="showitem" id="hidden">
                     <div id="showitemhelp" class="hidden2">
-                        <p><span id="bracket">{</span> EMANE <span id="bracket">}</span></p>
+                        <p><span id="bracket"></span> EMANE <span id="bracket"></span></p>
                     </div>
-                </a>
-                <img src="portfolio/emane.jpg">
-            </div>
+                    <img src="portfolio/emane.jpg">
+                </div>
+            </a>
 
-
-            <div class="showitem" id="hidden">
-                <a href="https://hd326.github.io/bobs-burger" target="_blank">
+            <a href="https://hd326.github.io/bobs-burger" target="_blank">
+                <div class="showitem" id="hidden">
                     <div id="showitemhelp" class="hidden2">
-                        <p><span id="bracket">{</span> BOB'S BURGERHOUSE <span id="bracket">}</span></p>
+                        <p><span id="bracket"></span> BOB'S BURGERHOUSE <span id="bracket"></span></p>
                     </div>
-                </a>
-                <img src="portfolio/bobs-burger.jpg">
-            </div>
-
+                    <img src="portfolio/bobs-burger.jpg">
+                </div>
+            </a>
         </div>
     </div>
 
     <script src="jquery-3.2.1.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $('.showitem').hover(
-                function() {
+                function () {
                     $('img', this).css({
                         'visibility': 'hidden'
                     });
                     $('#showitemhelp', this).fadeIn(450);
                 },
-                function() {
+                function () {
                     $('img', this).css({
                         'visibility': 'visible'
                     });
@@ -118,56 +114,62 @@
 
             <div id="additionalrows">
 
-                <div class="additionalrowsitem">
-                    <div class="additionalrowsitemname"><a href="https://hd326.github.io/hp-photography" target="_blank">H-P Photography</a></div>
-                    <div class="additionalrowsitemtype"><a href="https://hd326.github.io/hp-photography" target="_blank">Freelance</a></div>
-                    <div class="additionalrowsitemdate"><a href="https://hd326.github.io/hp-photography" target="_blank">2017</a></div>
+
+                <div class="additionalrowsitem"><a href="https://hd326.github.io/hp-photography">
+                        <div class="additionalrowsitemname">H-P Photography</div>
+                        <div class="additionalrowsitemtype">Freelance</div>
+                        <div class="additionalrowsitemdate">2017</div>
+                    </a>
+                </div>
+
+
+
+
+                <div class="additionalrowsitem"><a href="https://hd326.github.io/marigold" target="_blank">
+                        <div class="additionalrowsitemname">Marigold</div>
+                        <div class="additionalrowsitemtype">UX</div>
+                        <div class="additionalrowsitemdate">2017</div>
+                    </a>
                 </div>
 
 
 
                 <div class="additionalrowsitem">
-                    <div class="additionalrowsitemname"><a href="https://hd326.github.io/marigold" target="_blank">Marigold</a></div>
-                    <div class="additionalrowsitemtype"><a href="https://hd326.github.io/marigold" target="_blank">UX</a></div>
-                    <div class="additionalrowsitemdate"><a href="https://hd326.github.io/marigold" target="_blank">2017</a></div>
-                </div>
-
-
-
-                <div class="additionalrowsitem">
-                    <div class="additionalrowsitemname"><a href="https://hd326.github.io/kalafina" target="_blank">Kalafina</a></div>
-                    <div class="additionalrowsitemtype"><a href="https://hd326.github.io/kalafina" target="_blank">Design</a></div>
-                    <div class="additionalrowsitemdate"><a href="https://hd326.github.io/kalafina" target="_blank">2017</a></div>
+                    <a href="https://hd326.github.io/kalafina" target="_blank">
+                        <div class="additionalrowsitemname">Kalafina</div>
+                        <div class="additionalrowsitemtype">Design</div>
+                        <div class="additionalrowsitemdate">2017</div>
+                    </a>
                 </div>
 
             </div>
 
             <script src="jquery-3.2.1.js"></script>
             <script>
-                $(function() {
-                    $('.additionalrowsitem').hover(
-                        function() {
-                            $(this).css({
-                                'background': 'linear-gradient(to right, #82e0ff, #ccffd3)',
-                                'color': 'white',
-                                'transition': 'all ease-in .3s'
-                            });
-                            $('.additionalrowsitem', this).css({
-                                'color': 'white',
-                                'transition': 'all ease-in .3s'
-                            });
-                        },
-                        function() {
-                            $(this).css({
-                                'background': 'inherit',
-                                'color': 'inherit'
-                            });
-                            $('#additional a').css({
-                                'color': 'inherit'
-                            });
-                        },
-                    );
-                });
+                //$(function() {
+                //    $('.additionalrowsitem').hover(
+                //        function() {
+                //            $(this).css({
+                //                'background': 'linear-gradient(to right, #82e0ff, #ccffd3)',
+                //                'color': 'white',
+                //                'transition': 'all ease-in .3s'
+                //            });
+                //            $('.additionalrowsitem', this).css({
+                //                'color': 'white',
+                //                'transition': 'all ease-in .3s'
+                //            });
+                //        },
+                //        function() {
+                //            $(this).css({
+                //                'background': 'inherit',
+                //                'color': 'inherit'
+                //            });
+                //            $('#additional a').css({
+                //                'color': 'inherit'
+                //            });
+                //        },
+                //    );
+                //});
             </script>
 
             <!--<table>
@@ -222,9 +224,9 @@
 
             <script src="jquery-3.2.1.js"></script>
             <script>
-                $(function() {
+                $(function () {
                     var $list = $('#actual .list');
-                    $('#years .list').text(function(i) {
+                    $('#years .list').text(function (i) {
                         return $list.eq(i).text().length;
                     });
                     /*
@@ -245,13 +247,13 @@
                     */
 
                     $('#skills').hover(
-                        function() {
+                        function () {
                             $('#skills').css({
                                 'background-color': '#eaf8ff',
                                 'transition': 'all ease-in-out .3s'
                             });
                         },
-                        function() {
+                        function () {
                             $('#skills').css({
                                 'background-color': 'inherit'
                             });
@@ -259,13 +261,13 @@
                     );
 
                     $('#interest').hover(
-                        function() {
+                        function () {
                             $('#interest').css({
                                 'background-color': '#ffeeee',
                                 'transition': 'all ease-in-out .3s'
                             });
                         },
-                        function() {
+                        function () {
                             $('#interest').css({
                                 'background-color': 'inherit'
                             });
@@ -273,13 +275,13 @@
                     );
 
                     $('#education').hover(
-                        function() {
+                        function () {
                             $('#education').css({
                                 'background-color': '#f9ffe3',
                                 'transition': 'all ease-in-out .3s'
                             });
                         },
-                        function() {
+                        function () {
                             $('#education').css({
                                 'background-color': 'inherit'
                             });
@@ -315,7 +317,7 @@
                 });
             </script>
             <script>
-                $(function() {
+                $(function () {
                     /*var number = $('#actual .list');
                         for (i = 0; i < number.length; i++) {
                             var characters = number.text().length;
@@ -377,7 +379,9 @@
             </div>
             <div id="more-info-me">
                 <h1>More about me</h1>
-                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've always enjoyed art, and feel like I've found potentiality through programming. I have an interest in colorscapes in designs and the desire to continually explore technology. </p>
+                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've
+                    always enjoyed art, and feel like I've found potentiality through programming. I have an interest in
+                    colorscapes in designs and the desire to continually explore technology. </p>
             </div>
 
             <div id="more-info-pic">
@@ -386,7 +390,9 @@
 
             <div id="more-info-me-m">
                 <h1>More about me</h1>
-                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've always enjoyed art, and feel like I've found potentiality through programming. I have an interest in colorscapes in designs and the desire to continually explore technology. </p>
+                <p>Hello, I first got interested in Computer Science after discovering my passion for learning. I've
+                    always enjoyed art, and feel like I've found potentiality through programming. I have an interest in
+                    colorscapes in designs and the desire to continually explore technology. </p>
             </div>
         </div>
     </div>
@@ -401,10 +407,14 @@
         <div id="socialmedia">
             <nav>
                 <ul>
-                    <li><a href="https://github.com/hd326" target="_blank"><span class="fab fa-github fa-2x"></span></a></li>
-                    <li><a href="https://www.linkedin.com/in/richarddduong/" target="_blank"><span class="fab fa-linkedin fa-2x"></span></a></li>
-                    <li><a href="https://twitter.com/richardduong89" target="_blank"><span class="fab fa-twitter fa-2x"></span></a></li>
-                    <li><a href="mailto:r_duong89@yahoo.com" target="_blank"><span class="far fa-envelope fa-2x"></span></a></li>
+                    <li><a href="https://github.com/hd326" target="_blank"><span class="fab fa-github fa-2x"></span></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/richarddduong/" target="_blank"><span
+                                class="fab fa-linkedin fa-2x"></span></a></li>
+                    <li><a href="https://twitter.com/richardduong89" target="_blank"><span
+                                class="fab fa-twitter fa-2x"></span></a></li>
+                    <li><a href="mailto:r_duong89@yahoo.com" target="_blank"><span
+                                class="far fa-envelope fa-2x"></span></a></li>
                 </ul>
             </nav>
         </div>
@@ -413,7 +423,7 @@
     <script src="jquery-ui.min.js"></script>
     <script src="jquery-3.2.1.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $('#hidden:nth-of-type(1)').fadeIn(1000);
             $('#hidden:nth-of-type(2)').fadeIn(1500);
             $('#hidden:nth-of-type(3)').fadeIn(2000);
@@ -431,7 +441,7 @@
             );
             */
             $(window).scroll(
-                function() {
+                function () {
                     var scrollval = $(this).scrollTop();
                     console.log(scrollval);
                     if (scrollval >= 1) {
@@ -458,13 +468,15 @@
 
                     if (scrollval >= 1200) {
                         /*$('#more-info').fadeIn(1500);*/
-                        $('#more-info').show('slide', { direction: 'down' }, 1500);
+                        $('#more-info').show('slide', {
+                            direction: 'down'
+                        }, 1500);
                     }
-                    
+
                     if (scrollval >= 1400) {
                         $('#startproject').fadeIn(1200);
                     }
-                    
+
                     if (scrollval >= 1500) {
                         /*$('#socialmedia').fadeIn(1500);*/
                         $('#socialmedia nav ul li:nth-of-type(1) span').show('slide', {
@@ -484,9 +496,6 @@
             );
 
         });
-        
-        
-        
     </script>
 
 
@@ -523,7 +532,7 @@
         }
     </script>-->
     <script>
-        $(function() {
+        $(function () {
             var p = $('#wreath');
             for (i = 0; i < 1000; i++) {
                 p
@@ -562,8 +571,8 @@
     </script>
 
     <script>
-        $(function() {
-            $(window).scroll(function() {
+        $(function () {
+            $(window).scroll(function () {
                 if ($(this).scrollTop() > 10) {
                     $('#main-nav').css({
                         position: 'fixed',

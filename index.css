@@ -105,35 +105,37 @@ header a {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
     grid-gap: 30px;
     margin-top: 75px;
 }
 
-.showitem {
+.showitem  {
     background-color: #d8ffed;
     z-index: 1;
     border-radius: 1.75px;
     position: relative;
-    height: 100%;
-    width: 100%;
+
 }
+
 
 .showitem img {
     opacity: .75;
     padding: 50px;
     width: 100%;
     height: 100%;
+    position:relative;
 }
 
-#bracket {
+/*#bracket {
     color: #ffc1c1;
     font-size: 36px;
     background: -webkit-linear-gradient(#ffdcdc, #d5ffb0, #ffdcdc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0px 15px;
-}
+}*/
 
 /*
 .showitem:hover img {
@@ -165,22 +167,21 @@ header a {
 }
 */
 
-#showcase .showitem:nth-of-type(1) {
+#showcase a:nth-of-type(1) .showitem {
     background: linear-gradient(to bottom right, #cdffea, #ffffff);
 }
 
-#showcase .showitem:nth-of-type(2) {
+#showcase a:nth-of-type(2) .showitem {
     background: linear-gradient(to bottom right, #e6cdff, #ffffff);
 }
 
-#showcase .showitem:nth-of-type(3) {
+#showcase a:nth-of-type(3) .showitem {
     background: linear-gradient(to bottom right, #e8ffcd, #fcfcfc);
 }
 
-#showcase .showitem:nth-of-type(4) {
+#showcase a:nth-of-type(4) .showitem {
     background: linear-gradient(to bottom right, #ffdccd, #ffffff);
 }
-
 
 .picture {
     width: 100%;
@@ -188,8 +189,6 @@ header a {
     z-index: 9999;
     position: relative;
 }
-
-
 
 #hidden {
     display: none;
@@ -206,7 +205,7 @@ header a {
     z-index: 2;
     color: #797979;
     letter-spacing: 2px;
-    top: 40%;
+    top: 43%;
 }
 
 #showitemhelp p {
@@ -296,7 +295,7 @@ header a {
 
 */
 
-.additionalrowsitem {
+.additionalrowsitem a {
     display: grid;
     grid-template-columns: 1fr .4fr .2fr;
     width: 100%;
@@ -308,21 +307,21 @@ header a {
     font-size: 18px;
 }
 
-.additionalrowsitem .additionalrowsitemname {
+.additionalrowsitem a .additionalrowsitemname {
     text-align: left;
     
 }
 
-.additionalrowsitem .additionalrowsitemtype {
+.additionalrowsitem a .additionalrowsitemtype {
     text-align: left;
 }
 
-.additionalrowsitem .additionalrowsitemdate {
+.additionalrowsitem a .additionalrowsitemdate {
     text-align: right;
 }
 
-.additionalrowsitem .additionalrowsitemdate:after,
-.additionalrowsitem .additionalrowsitemdate:before {
+.additionalrowsitem a .additionalrowsitemdate:after,
+.additionalrowsitem a .additionalrowsitemdate:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -632,7 +631,7 @@ header a {
     .container #showcase {
         width: 60%;
         transform: translateX(%);
-        margin-top: 50px;
+        margin-top: 65px;
     }
 
     .container #additional {
@@ -649,7 +648,7 @@ header a {
     }
 
     .container .showitem {
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .container #segue {
@@ -678,7 +677,8 @@ header a {
     }
 
     .container #education {
-        width: 100%;
+        width: 60%;
+        height: 100%;
         font-size: 12px;
         transform: translateX(0%);
     }
